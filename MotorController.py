@@ -18,7 +18,7 @@ class MotorController():
         self.mast_angle = 0.0
         self.arm_angle = 0.0
 
-
+    #Set up the connection with the component
     def connect(self):
         #self.connection = serial.Serial(self.serial_device, self.serial_baudrate, timeout=1)
         self.connection = serial.Serial()
@@ -80,7 +80,6 @@ class MotorController():
 
     def get_current_angles(self):
         return (self.mast_angle, self.arm_angle)
-
 
     def _send_movement_command(self, axis, amount):
         # send actual movement command
