@@ -10,7 +10,7 @@ from pprint import pprint
 class MotorController():
     # configuration parameters
 
-
+    #Initialization of the connection and angle
     def __init__(self, serial_device, baudrate):
         self.serial_device = serial_device
         self.serial_baudrate = baudrate
